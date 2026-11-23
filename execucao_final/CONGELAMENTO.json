@@ -1,0 +1,38 @@
+{
+  "criado_utc": "2026-11-23T04:30:13.850991+00:00",
+  "fonte_git": "f04b8d0bcd39c52e1cf3ad7a5fe744709832ae49",
+  "git_status": "limpo verificado antes de congelar",
+  "python": "3.11.0",
+  "dependencias": {
+    "PyYAML": "6.0.3",
+    "jsonschema": "4.26.0",
+    "matplotlib": "3.11.0"
+  },
+  "arquivos": {
+    "PROTOCOLO.md": "606f8c25fa7f50d2342e9b3b37f427881bff1297f601461d491a9b04b8b03fa1",
+    "requirements.txt": "6e79c4becfac8c136de6bdab4ed077219b0a529fd628441fe1fcb8440f9bdaf0",
+    "schemas/openapi-3.0-2024-10-18.json": "2385f5bbb8c37878daae73baeabe7f34b2f022a4a8c049329ee61f71796f039c",
+    "scripts/analise_ampliada.py": "bcd20b94f69b733f66dc2239ff1b0cbed6522e06bf10356741cdf9af6a667fd5",
+    "scripts/auditoria_textual.py": "74e31769393a6a92ffdc08b787bf7522f398fd78679086c3c4424b8ff737b174",
+    "scripts/comparar_fontes.py": "2fe8b9c7d703c3c2d10c04297219211c60534b27d607392d95a58084d853ee76",
+    "scripts/elegibilidade.py": "6a1c2c25c1ad7778ec00fb529ce88b157cc2b3184ebab40aebc9b91deac5d870",
+    "scripts/empacotar.py": "2087e1f3e51140da885ee219e35fbf573eec1655f35327c144f2da61fdd417f9",
+    "scripts/exportar_detalhes.py": "8f2e71852e7e64698a58309533f4c3c11cae43bd06bbbef237317b5796341be2",
+    "scripts/extrair_amostra.py": "1faf6a1cea74dfb211f0119ec82ccb98d94ab72b39e42fb4bd01bdb050eaa74e",
+    "scripts/extrator.py": "c1f329e1206204f171e3763c86d77b2a4dabba8eee2a4029cc9f466a8098b835",
+    "scripts/gerar_figura_artigo.py": "022c8d8f7c4f530602282af85090fb062aa8bdd2b5e70826783a7a71f27cbe5c",
+    "scripts/graficos_exploratorios.py": "9ba67a77958473b4751c1d2822606a025f99e7a7e1a707996564974fe799abd9",
+    "scripts/resumir.py": "6bf180cccd50131f16c24fe982d862cd0424a7a8d31e6262d421d865d03dcc42",
+    "scripts/selecionar.py": "43472e4772c814768575f40b21ec6ec0f446c450cd23037319d0f01c21149369",
+    "scripts/sensibilidade_definicao.py": "179e435b5316041cd5ffde0583c1b970ea416bba970e47267e722acb749d1e45",
+    "scripts/validar_schema.py": "5a10058c666513c28b69ad13f64c9c6e265b295b5f1e30cd4f72ca54634b4b88",
+    "scripts/verificar_resultados.py": "34521886ac273bd7c8befb9819c518e2bdab982d55e9c22845d1911791aa6ca3",
+    "scripts/yaml_aberto.py": "b9b9a5ada24ff68ecf67018473a46c6e0bc7c3507edf0f17664b3b9a2a6aff08",
+    "tests/test_analise_ampliada.py": "748cfbe32772a273eba684f856473353b99ef402fa72e00f79ca1871f6f81970",
+    "tests/test_elegibilidade.py": "05f012afda7b908a638298e35c2b5c9dd1f98f215349bce0faa0f91e4b60c1d2",
+    "tests/test_extrator.py": "feaa0eaaaa79819bd279f58b9947e154293f8e18a613ff1d72c77b86ff3f5cce",
+    "tests/test_schema.py": "49061d44f3e7bcf0b41b2a894d0c80794ff4d86be8e54733dd2ccd7b1785f8c0",
+    "tests/test_selecao.py": "105fe746c95806207ff5a6c136074045caa8ab825743b28d53702eb3ae8cdd8b",
+    "tests/test_sensibilidade.py": "6b5557a94c03fc36d2de48778025bd6e9e267e718ab532be9b5bffed5f9a2e37"
+  }
+}

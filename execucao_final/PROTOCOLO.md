@@ -1,0 +1,29 @@
+# Protocolo da execução final e conjunto de análises
+
+## Natureza e compromisso de transparência
+
+Este trabalho é um estudo observacional, quantitativo e descritivo de documentos OpenAPI; os experimentos são execuções computacionais sobre o mesmo corpus, sem intervenção e sem grupos independentes. As perguntas e regras abaixo foram consolidadas depois de exploração inicial dos dados. Portanto, os resultados finais desta execução são descritivos e exploratórios, não confirmatórios ou pré-registrados. A palavra final significa que os scripts, a fonte e as regras desta execução foram congelados e os dados foram reprocessados, não que erros ou incerteza sejam impossíveis.
+
+## Fonte, seleção e análise
+
+Fonte: clone local APIs.guru na revisão f04b8d0bcd39c52e1cf3ad7a5fe744709832ae49, Git sem alterações locais na verificação de 23/11/2026. Unidade: uma especificação escolhida por grupo de API identificado pelo caminho. Busca em openapi.yaml e swagger.yaml (quando os dois coexistirem, priorizar openapi.yaml). Escolher única versão marcada info.x-preferred=true; se houver somente uma versão e o marcador faltar, selecioná-la com indicação dessa condição. Se houver várias versões sem preferência inequívoca, ou metadados ilegíveis, não escolher automaticamente; registrar. Deduplicar bytes idênticos por SHA-256 entre candidatas, mantendo a primeira em ordem lexicográfica de ID; não alegar equivalência semântica.
+
+Incluir OpenAPI 3.0.x com parsing YAML sem chaves explícitas duplicadas, info e components com estrutura mínima e paths contendo ao menos uma operação HTTP. Manter documentos sem componentes ou sem $ref. Entre os aprovados na triagem, o corpus principal contém apenas documentos que também atendem ao esquema informativo OpenAPI 3.0 de 2024-10-18, usando jsonschema Draft 4 sem conferência de formatos. Preservar resultados da triagem mínima sem este filtro como sensibilidade. O esquema não certifica conformidade semântica completa; causas de falha e timeout devem ficar explícitas, sem reclassificação silenciosa. Arquivos e versões sem escolha permanecem em registro próprio.
+
+Definições: cada entrada de components em schemas, parameters, responses e requestBodies. Referência central: ocorrência direta em posição estrutural percorrida cujo destino é um componente inteiro existente de uma dessas categorias e compatível com a posição. Não expandir cadeias. Dados em exemplos e extensões, referências para subpartes, outras categorias, arquivos externos, incompatibilidades e destinos inexistentes não integram o total central; registrar ocorrências identificadas. A análise não comprova que a mesma definição seja usada por operações distintas. Contar posições completas distintas. Componente referenciado: ao menos uma ocorrência; reutilizado: pelo menos duas. Para proporções por documento e categoria, denominador zero é não aplicável.
+
+## Experimentos sobre o mesmo corpus
+
+1. Frequência: documentos com e sem referência central; ocorrências e distribuição por documento, incluindo zeros. Denominador: todos os documentos do corpus.
+2. Componentes por categoria: definições, zero referência, uma referência, pelo menos duas; proporções em relação às definições de cada categoria e frequência de documentos com cada categoria. Distinguir percentuais agregados de medianas por documento.
+3. Variação entre documentos: referências, componentes, operações e percentual de componentes reutilizados por documento; mediana, quartis com interpolação inclusiva, mínimo, máximo e número de dados aplicáveis. Percentuais já são arredondados a quatro casas decimais pelo extrator antes dos agregados.
+4. Local de referência e sensibilidade da definição: comparação da regra principal com contagem restrita ao trecho paths e com remoção de autorreferências diretas. Não alegar que paths equivale a operações distintas, nem que o teste de autorreferência identifica todos os ciclos.
+5. Concentração e robustez: fração de referências concentrada nos maiores documentos; repetir medianas após omitir temporariamente os maiores 1, 5 e aproximadamente 1% dos documentos ordenados por referências. A análise principal mantém todos os documentos; não remover extremos simplesmente por serem grandes.
+6. Associações descritivas: Spearman com postos médios nos empates entre operações, componentes definidos e referências, em todos os documentos do corpus. Não calcular significância, nem inferir causa ou qualidade.
+7. Sensibilidade de seleção: comparar o subconjunto que passou apenas na triagem mínima com o subconjunto principal filtrado pelo esquema; como contextualização adicional, comparar nomes de versão do clone com o índice REST obtido posteriormente. Igualdade de nome não prova igualdade de conteúdo e diferenças entre fontes não têm causa presumida.
+
+## Execução e verificação
+
+O diretório scripts e o esquema neste pacote foram copiados antes da execução final; seus hashes e as versões de dependências são registrados em CONGELAMENTO.json. Recriar inventário, triagem, validação do esquema e extração em novas pastas, sem reaproveitar caches de uma versão anterior do código. Verificar hashes de origem em cada fase que lê o documento, integridade das saídas, consistência dos totais, relação reutilizados <= referenciados <= definidos, auditoria textual de sete arquivos e Git limpo. Repetir validações demoradas com limite maior e registrar falhas remanescentes. Preservar o índice REST e seus metadados previamente coletados, sem incorporá-lo retroativamente à escolha do clone.
+
+Revisões qualitativas e validação semântica adicional podem ocorrer depois e devem ser registradas. Não afirmar que todos os documentos OpenAPI são válidos, que todas as APIs estão representadas ou que a relação observada seja causal. Verificar direitos antes de redistribuir fontes e resultados derivados.

@@ -1,0 +1,17 @@
+﻿categoria_a,categoria_b,documentos_com_ambas,base_documentos
+schemas,schemas,1468,1617
+schemas,parameters,810,1617
+schemas,responses,306,1617
+schemas,requestBodies,93,1617
+parameters,schemas,810,1617
+parameters,parameters,821,1617
+parameters,responses,91,1617
+parameters,requestBodies,38,1617
+responses,schemas,306,1617
+responses,parameters,91,1617
+responses,responses,314,1617
+responses,requestBodies,23,1617
+requestBodies,schemas,93,1617
+requestBodies,parameters,38,1617
+requestBodies,responses,23,1617
+requestBodies,requestBodies,101,1617

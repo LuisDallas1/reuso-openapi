@@ -1,0 +1,5 @@
+﻿categoria,documentos_com_categoria,documentos_sem_categoria,mediana_pct_reuso_por_documento,q1_pct_reuso_por_documento,q3_pct_reuso_por_documento,documentos_com_algum_reutilizado
+schemas,1468,149,29.565198315198316,18.35384935422018,44.44444444444444,1297
+parameters,821,796,100.0,100.0,100.0,767
+responses,314,1303,97.5,0.0,100.0,224
+requestBodies,101,1516,100.0,100.0,100.0,87

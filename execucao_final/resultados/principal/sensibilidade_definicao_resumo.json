@@ -1,0 +1,14 @@
+{
+  "documentos": 1617,
+  "documentos_com_componentes": 1489,
+  "refs_todas": 782302,
+  "refs_em_paths": 541152,
+  "reutilizados_todas": 59781,
+  "reutilizados_em_paths": 30181,
+  "reutilizados_sem_autorreferencia": 59692,
+  "mediana_reuso_todas_pct": 37.5,
+  "mediana_reuso_em_paths_pct": 20.0,
+  "mediana_reuso_sem_autorreferencia_pct": 37.5,
+  "documentos_com_alguma_diferenca_paths": 1027,
+  "documentos_com_alguma_diferenca_autorreferencia": 53
+}

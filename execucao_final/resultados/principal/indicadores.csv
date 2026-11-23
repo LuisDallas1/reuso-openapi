@@ -1,0 +1,15 @@
+﻿indicador,valor
+documentos_analisados,1617
+documentos_com_refs,1472
+percentual_documentos_com_refs,91.03
+documentos_sem_refs,145
+mediana_refs_por_documento,79
+total_refs_centrales,782302
+total_componentes_definidos,168421
+documentos_com_reuso_aplicavel,1489
+documentos_reuso_na,128
+reuso_q1_pct,25.5814
+reuso_mediana_pct,37.5
+reuso_q3_pct,55.5556
+reuso_min_pct,0.0
+reuso_max_pct,100.0

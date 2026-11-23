@@ -1,0 +1,51 @@
+{
+  "arquivos_congelados": 25,
+  "hashes_divergentes": [],
+  "elegibilidade_status_diferente": [],
+  "schema_status_ou_pointer_diferente": [],
+  "metricas_por_documento_diferentes": [],
+  "auditoria_textual": {
+    "APIs/microsoft.com/graph-beta/1.0.1/openapi.yaml": {
+      "arquivo": "APIs/microsoft.com/graph-beta/1.0.1/openapi.yaml",
+      "linhas_ref_textual": "104617",
+      "referencias_registradas_todos_status": "104617",
+      "diferenca": "0"
+    },
+    "APIs/1password.com/events/1.2.0/openapi.yaml": {
+      "arquivo": "APIs/1password.com/events/1.2.0/openapi.yaml",
+      "linhas_ref_textual": "76",
+      "referencias_registradas_todos_status": "76",
+      "diferenca": "0"
+    },
+    "APIs/6-dot-authentiqio.appspot.com/6/openapi.yaml": {
+      "arquivo": "APIs/6-dot-authentiqio.appspot.com/6/openapi.yaml",
+      "linhas_ref_textual": "55",
+      "referencias_registradas_todos_status": "55",
+      "diferenca": "0"
+    },
+    "APIs/mermade.org.uk/openapi-converter/1.0.0/openapi.yaml": {
+      "arquivo": "APIs/mermade.org.uk/openapi-converter/1.0.0/openapi.yaml",
+      "linhas_ref_textual": "4",
+      "referencias_registradas_todos_status": "4",
+      "diferenca": "0"
+    },
+    "APIs/etherpad.local/1.2.15/openapi.yaml": {
+      "arquivo": "APIs/etherpad.local/1.2.15/openapi.yaml",
+      "linhas_ref_textual": "0",
+      "referencias_registradas_todos_status": "0",
+      "diferenca": "0"
+    },
+    "APIs/statsocial.com/1.0.0/openapi.yaml": {
+      "arquivo": "APIs/statsocial.com/1.0.0/openapi.yaml",
+      "linhas_ref_textual": "113",
+      "referencias_registradas_todos_status": "113",
+      "diferenca": "0"
+    },
+    "APIs/rev.ai/v1/openapi.yaml": {
+      "arquivo": "APIs/rev.ai/v1/openapi.yaml",
+      "linhas_ref_textual": "35",
+      "referencias_registradas_todos_status": "35",
+      "diferenca": "0"
+    }
+  }
+}

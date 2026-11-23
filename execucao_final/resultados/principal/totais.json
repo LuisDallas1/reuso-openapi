@@ -1,0 +1,25 @@
+{
+  "documentos": 1617,
+  "provedores_por_pasta": 468,
+  "operacoes": 106089,
+  "componentes_definidos": 168421,
+  "componentes_sem_referencia": 16988,
+  "componentes_com_uma_referencia": 91652,
+  "componentes_reutilizados": 59781,
+  "documentos_sem_componentes": 128,
+  "documentos_com_componentes_sem_referencias": 17,
+  "documentos_com_refs": 1472,
+  "documentos_com_reutilizados": 1333,
+  "refs_centrais": 782302,
+  "origem_refs_centrais": {
+    "paths": 541152,
+    "components": 241150
+  },
+  "refs_centrais_no_proprio_componente": 265,
+  "contagem_status_ref": {
+    "valida": 782302,
+    "fora_de_escopo": 18481,
+    "tipo_incompativel": 5
+  },
+  "tratamento": "preliminar; sem inferencia causal; quartis por interpolacao inclusiva; componentes e documentos sao bases distintas"
+}
